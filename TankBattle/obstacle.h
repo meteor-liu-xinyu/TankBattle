@@ -1,0 +1,32 @@
+#ifndef OBSTACLE_H
+#define OBSTACLE_H
+
+#include <QPixmap>
+#include <QRect>
+#include <QString>
+#include <QPainter>
+
+#include "entity.h"
+
+enum ObstacleType {
+    Brick,
+    Iron,
+    River,
+    Tree,
+    Home
+};
+
+
+class Obstacle : public Entity
+{
+public:
+    Obstacle(int x, int y, ObstacleType obstacletype);
+    ~Obstacle();
+    void homeDestroyed();
+
+private:
+    ObstacleType obstacletype; // 障碍物类型
+    QString picpath;
+};
+
+#endif // OBSTACLE_H
