@@ -1,7 +1,8 @@
 # TankBattle
 这是一个基于c++，qt 5.6.1 的坦克大战游戏
 
-# 安装方法 下载TankBattle.exe，运行并安装程序。
+# 安装方法
+下载TankBattle.exe，运行并安装程序。
 
 # 介绍
 
